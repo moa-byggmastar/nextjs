@@ -9,13 +9,14 @@ export default function form() {
 
     return (
         <div>
-            <form action={handleSubmit}>
-                <input name='name' type="text" placeholder='Name:' />
-                <input name='email' type="text" placeholder='Email' />
-                <input name='message' type="text" placeholder='Message:' />
-                <input name='adress' type="text" placeholder='Adress:' />
-                <input name='town' type="text" placeholder='Town' />
-                <button>Submit</button>
+            <h1>Formulär</h1>
+            <form action={handleSubmit} className='form'>
+                <input name='name' type="text" placeholder='Namn:' className='input' required />
+                <input name='email' type="text" placeholder='E-post:' className='input' required />
+                <input name='message' type="text" placeholder='Meddelande:' className='input' required />
+                <input name='adress' type="text" placeholder='Adress:' className='input' required />
+                <input name='town' type="text" placeholder='Stad' className='input' required />
+                <button className='button'>Lämna In</button>
             </form>
         </div>
     )
